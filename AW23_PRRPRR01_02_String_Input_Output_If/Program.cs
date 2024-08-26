@@ -8,11 +8,19 @@ namespace AW23_PRRPRR01_02_String_Input_Output_If {
 	internal class Program {
 		static void Main(string[] args) {
 
-			Console.WriteLine("Vad heter din katt?");
+			Console.WriteLine("Gillar du glass?");
 
-			string input = Console.ReadLine();
+			string reply = Console.ReadLine().ToLower();
 
-			Console.WriteLine("Din katt heter: " + input);
+			if (reply == "ja") {
+				Console.WriteLine("Kul(a)");
+			} else if (reply == "kanske") {
+				Console.WriteLine("Vad kan jag göra för att övertyga dig?");
+			} else {
+				Console.WriteLine("Synd");
+			}
+
+
 
 		}
 	}
